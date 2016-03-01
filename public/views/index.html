@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Favorite Rescue Animals</title>
+        <script type="text/javascript" src="/vendors/angular.min.js"></script>
+        <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+        <script type="text/javascript" src="/scripts/app.js"></script>
+        <script type="text/javascript" src="/scripts/factories/dataFactory.js"></script>
+        <script type="text/javascript" src="/scripts/controllers/findController.js"></script>
+        <script type="text/javascript" src="/scripts/controllers/favoriteController.js"></script>
+
+        <link rel="stylesheet" href="styles/style.css" />
+    </head>
+
+    <body>
+        <header ng-include="'/templates/header.html'"></header>
+        <div ng-view></div>
+        <footer ng-include="'/templates/footer.html'"></footer>
+    </body>
+</html>

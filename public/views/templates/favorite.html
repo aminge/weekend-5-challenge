@@ -1,0 +1,14 @@
+<h1>Your Favorite Pets</h1>
+
+<!--I still need to do this. I think it has to be done from the factory-->
+<p>Animals Favorited: {{favoriteCount}}</p>
+
+<p><a href="#find">Return to Searching</a></p>
+
+<div ng-repeat="favorite in favorites">
+    <h2>Name: {{favorite.name}}</h2>
+    <h3>ID: {{favorite.id}}</h3>
+    <h3>Animal Type: {{favorite.type}}</h3>
+    <img ng-src="{{favorite.picture_url}}" />
+    <p>{{favorite.description}}</p>
+</div>
